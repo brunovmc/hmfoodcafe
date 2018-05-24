@@ -1,0 +1,406 @@
+body{
+
+	background:black;
+	background-repeat: no-repeat;
+	color: #fff;
+    font-family: 'Lato', sans-serif;
+   
+	
+}
+
+ div.navbar-header.title a {
+  color: inherit;
+
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #e8874e;
+}
+
+
+ 
+
+.navbar.transparent.navbar-inverse  {
+	padding-top: 7px;
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+
+}
+
+
+div .navbar-nav .open .dropdown-menu{
+    background-color: white;
+}
+
+.navbar-nav .open .dropdown-menu>li>a {
+    line-height: 30px;
+}
+
+.navbar-nav .open .dropdown-menu>li>a:hover,.navbar-nav .open .dropdown-menu>li>a:focus{
+    background:black;
+    color: white;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+
+.bringFoward{
+	z-index: 1;
+  	position: relative;
+}
+
+.socialMedia{
+	font-size: 1.3em;
+	
+	list-style: none;
+	display: inline;
+}
+
+.reading{
+	margin: 10%;
+	padding:10%;
+}
+
+div.title .bringFoward .map{
+  background:white;
+  height: 20%;
+ 
+}
+
+.box{
+	background:white;
+	color: black;
+	
+}
+
+.squarebox{
+  background:black;
+  /*padding:50px;*/
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=723bf403c08d27742f820e166b5c9f67&auto=format&fit=crop&w=1051&q=80) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf1a1f5dc811c25c3fde15099a940ffe&auto=format&fit=crop&w=1050&q=80);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=217692eafea198d67733b9ee9c3f99d7&auto=format&fit=crop&w=1050&q=80);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://images.unsplash.com/photo-1442550528053-c431ecb55509?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bc9274425932c0601be3e2ee781915e&auto=format&fit=crop&w=1050&q=80);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://images.unsplash.com/photo-1477173249897-5afc98d3f565?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5053a7e7a1d6599fd5ab7b5e40af376&auto=format&fit=crop&w=1055&q=80);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+
+
+
+    
+
+.fixcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -30px
+    
+}
+
+.fixright {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 18px;
+   
+}
+
+.glyphicon-map-marker{
+  color: orange;
+}
+
+
+.orange{
+  color:#ed8217;
+ 
+}
+.orange:hover{
+  color: #aa5601;
+  text-decoration: none;
+}
+
+
+.white{
+  color: white;
+  margin-left: 50%;
+  text-align: center;
+}
+
+.white:hover{
+  color: #e8874e;
+  text-decoration: none;
+}
+
+.textlink{
+  color: white;
+  text-decoration: none;
+}
+
+.textlink:hover{
+  color:grey;
+  text-decoration: none;
+}
+
+.pink{
+  color: #db1aab;
+}
+.pink:hover{
+  color:pink;
+}
+
+.blue{
+  color:#3b5998;
+}
+
+.blue:hover{
+  color: #7a809b;
+}
+
+
+
+.maxheight {
+  max-height: 20%;
+}
+
+ :focus {
+ 	outline: none;
+ }
+
+.displayRight{
+
+	float: right;
+}
+
+
+
+h2.displayCenter{
+	text-align: center;
+}
+
+h3.displayCenter{
+	text-align: center;
+}
+
+h4.displayCenter{
+	text-align: center;
+}
+
+.roundbtn{
+  border-radius: 100%;
+}
+
+.round{
+    border-radius: 100%;
+    margin-top: 0;
+   
+}
+.round:hover{
+  border: 5px solid black;
+}
+
+.limited{
+   max-height: 255px;
+    max-width: 255px;
+    width: 100%;
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+
+#map{
+  height: 100%;
+}
+
+.mapbox{
+  height:250px;
+  width: 100%;
+}
+
+
+.borderdash{
+  padding: 50px;
+}
+
+.border{
+  border: 5px solid black;
+}
+
+.smalllogo{
+   height: 100px;
+   width: 100px;
+    
+}
+
+
+.fineborder{
+  border: 5px solid white;
+  padding-top: 20px;
+  
+  
+}
+
+
+.carousel-inner > .item > img {
+  width:100%;
+  height:100%;
+  max-width: 1070px;
+  max-height: 700px;
+  
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+.navbar{
+  font-size: 1.1em;
+}
+
+a.navbar-brand{
+  font-size: .8em;
+}
+
+.adress{
+  font-size: 1.1em;
+  margin-top: -50px;
+}
+
+.space{
+  margin-top: 15px;
+}
+
+
+@media screen and (max-width: 800px){
+    .info{
+        text-align: center;
+    }
+}
+
+.conBox{
+ padding:50px; 
+ margin: 0 auto;
+}
+
+.img-responsive{
+  margin: 0 auto;
+}
+
+.center{
+  text-align: center;
+}
+
+
+
+/*testing*/
