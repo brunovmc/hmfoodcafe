@@ -52,3 +52,39 @@ function initMap() {
 
 
 
+(function($){
+  $(function(){ 
+    var scroll = $(document).scrollTop();
+    var headerHeight = $('.landing-header').outerHeight();
+    $(window).scroll(function() {
+      var scrolled = $(document).scrollTop();
+      if (scrolled > headerHeight){
+        $('.landing-header').addClass('off-canvas');
+         $('.coffeeMug').removeClass('invisible');
+      } else {
+        $('.landing-header').removeClass('off-canvas');
+         $('.coffeeMug').addClass('invisible');
+      }
+        if (scrolled > scroll){
+         $('.landing-header').removeClass('fixed');
+        } else {
+        $('.landing-header').addClass('fixed');
+         $('.coffeeMug').addClass('invisible');
+        }            
+      scroll = $(document).scrollTop(); 
+     });
+   });
+})(jQuery);
+
+
+
+$('.coffeeMug').on('click', function () {
+
+if ($('.landing-header').hasClass('off-canvas'))
+    {
+        $('.landing-header').removeClass('off-canvas');
+        $('.coffeeMug').addClass('invisible');
+    } 
+});
+
+
