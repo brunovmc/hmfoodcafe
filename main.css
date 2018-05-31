@@ -53,6 +53,7 @@ a.navbar-brand{
   
 }
 
+
 .navbar-inverse .navbar-nav>li>a{
     color: white;
 }
@@ -383,26 +384,26 @@ div.carousel-caption p a.adress{
   position: relative!important;
   overflow: hidden!important;
 }
-.underlineRight:after {
-  content: ""!important;
-  position: absolute!important;
-  z-index: -1!important;
-  right: 0!important;
-  left: 100%!important;
-  bottom: -7px!important;
-  background: white!important;
-  height: 4px!important;
-  transition-property: left right!important;
-  transition-duration: 0.5s!important;
-  transition-timing-function: ease-out!important;
-}
-.underlineRight:hover:after,
-.underlineRight:focus:after,
-.underlineRight:active:after {
-  left: 0!important;
-}
+/*.underlineRight:after {*/
+/*  content: ""!important;*/
+/*  position: absolute!important;*/
+/*  z-index: -1!important;*/
+/*  right: 0!important;*/
+/*  left: 100%!important;*/
+/*  bottom: -7px!important;*/
+/*  background: white!important;*/
+/*  height: 4px!important;*/
+/*  transition-property: left right!important;*/
+/*  transition-duration: 0.5s!important;*/
+/*  transition-timing-function: ease-out!important;*/
+/*}*/
+/*.underlineRight:hover:after,*/
+/*.underlineRight:focus:after,*/
+/*.underlineRight:active:after {*/
+/*  left: 0!important;*/
+/*}*/
 
-.underlineLeft:after {
+.underlineLeft:after{
   content: ""!important;
   position: absolute!important;
   z-index: -1!important;
@@ -433,16 +434,50 @@ div.carousel-caption p a.adress{
   transition-property: left right!important;
   transition-duration: 1s!important;
   transition-timing-function: ease-out!important;
+  
 }
 
 .underlineRed:hover:after,
 .underlineRed:focus:after,
 .underlineRed:active:after {
   left: 0!important;
-  content:"Como chegar"!important;
+ 
 }
 
 .marginTop-100{
   margin-top: -100px!important;
+}
+
+/*========================mobile compatibility============================*/
+
+
+@media (max-width: 990px) {
+ 
+  .centralize{
+    margin-left:-10px;
+   
+  } 
+  .navbar.transparent.navbar-inverse{
+    background:black;
+    font-size:1.2em;
+  }
+  
+  .input{
+  width: 220px;
+  
+}
+
+.underlineLeft:after{
+  background:transparent!important;
+}
+.underlineRed:after{
+  background:transparent!important;
+}
+.underlineRed:hover:after,
+.underlineRed:focus:after,
+.underlineRed:active:after {
+  content:""!important;
+}
+    
 }
 
